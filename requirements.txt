@@ -1,0 +1,19 @@
+# Python libraries required to run the heading_extractor.py script.
+#
+# To install these libraries, run the following command:
+# pip install -r requirements.txt
+
+# Core PDF parsing library (PyMuPDF) used via the 'fitz' import.
+# Handles opening PDFs, metadata, ToC, text extraction, and rendering pages for OCR.
+PyMuPDF==1.24.1
+
+# High-level PDF parsing library used specifically for its robust table detection.
+pdfplumber==0.11.0
+
+# Python Imaging Library (Pillow), a dependency for pytesseract.
+# Handles the image data before it is sent to the OCR engine.
+Pillow==10.3.0
+
+# Python wrapper for Google's Tesseract-OCR Engine.
+# Used for the OCR fallback on scanned documents.
+pytesseract==0.3.10
